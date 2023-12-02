@@ -1,0 +1,4 @@
+*.S
+*.o
+perf.data*
+main
