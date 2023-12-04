@@ -287,7 +287,7 @@ int main(int argc, char **argv)
     {
 
         Game game = make_game_from_string(current_line);
-        print_game(game);
+        // print_game(game);
 
         // if ( verify_game(game) ) {
         //    sum += game.first;
