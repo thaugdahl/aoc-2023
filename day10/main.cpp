@@ -273,12 +273,6 @@ std::pair<Coordinate, bool> try_move(const Chart &chart, Coordinate from, Coordi
 
 Coordinate move_first(const Chart &chart, Coordinate from, Coordinate prev)
 {
-    // NORTH, EAST, SOUTH, WEST
-    // Coordinate north_coord = {from.first, from.second-1};
-    // bool can_move_from = allows({0, -1}, chart.at(from));
-    // bool can_move_to = accepts({0, -1}, chart.at(from));
-
-
     for (const auto c : DIRECTION_DIFFS )
     {
         auto [new_coord, valid] = try_move(chart, from, c);
